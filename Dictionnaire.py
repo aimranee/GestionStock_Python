@@ -3,6 +3,14 @@ class Dic:
         self.nom = nom
         self.quantite = quantite
         self.prix_unitaire = prix_unitaire
-    
-    def afficher(self):
-        print(f"Produit : {self.nom} {self.quantite} {self.prix_unitaire}")
+    list = []
+
+    def ajouterArticle(Dic c):
+        list.append(c)
+
+    def supprimerArticle(nom):
+        list.remove(nom)
+
+    def afficherArticles():
+        for art in list:
+            print(f"|   *{art.nom} : Quantite : {art.quantite} Prix : {art.prix_unitaire}\n")

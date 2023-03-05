@@ -1,4 +1,5 @@
 from Dictionnaire import Dic
+import sys
 
 print("=======================Gestion de stock=======================")
 while(1):
@@ -14,7 +15,8 @@ while(1):
         name = input("|\n|  Nom d'article : ")
         qunt = input("|\n|  Quantite d'article : ")
         prix = input("|\n|  Prix d'article : ")
-        Dic.ajouterArticle(Dic(name, qunt, prix))
+        art = Dic(name, qunt, prix)
+        Dic.ajouterArticle(art)
         print ("|\n|  Larticle est ajouter!!")
     
     if (choix == "2"):
@@ -25,4 +27,8 @@ while(1):
     if (choix == "3"):
         print()
         Dic.afficherArticles()
+
+    if (choix == "4"):
+        print ("\n  ***Mercii Aurevoire!!!***\n\n")
+        sys.exit()
     

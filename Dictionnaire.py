@@ -1,6 +1,5 @@
 list = []
 class Dic:
-    
 
     def __init__(self, nom, quantite, prix_unitaire):
         self.nom = nom
@@ -17,7 +16,7 @@ class Dic:
 
     def afficherArticles():
         if len(list) == 0:
-            print("The list is empty.")
+            print("   ==> The list is empty.")
         else:
             for art in list:
-                print(f"|   ==> Nom : {art.nom}; Quantite : {art.quantite}; Prix : {art.prix_unitaire}\n")
+                print(f"   ==> Nom : {art.nom}; Quantite : {art.quantite}; Prix : {art.prix_unitaire}")
